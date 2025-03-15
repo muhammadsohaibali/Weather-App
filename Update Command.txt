@@ -1,0 +1,13 @@
+# Step 1: Make sure you're in the project folder
+cd "F:\Professional\Codes\Final Projects\weatherapp\"
+
+# Step 2: Build the updated version
+npm run build
+
+# Step 3: Deploy the new build to GitHub Pages
+npm run deploy
+
+# Step 4: (Optional) Push your updated source code to GitHub
+git add .
+git commit -m "Updated Weather App"
+git push origin main
