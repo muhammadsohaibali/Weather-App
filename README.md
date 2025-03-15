@@ -37,7 +37,22 @@ cd Weather-App
 npm install
 ```
 
-### 3. Run the Application Locally
+### 3. Create a `.env` File
+
+In the root folder of the project, create a file named `.env` and add the following environment variables:
+
+```
+REACT_APP_WEATHER_API_URL=https://api.weatherapi.com/v1/forecast.json
+REACT_APP_GET_ALL_CITIES=https://secure.geonames.org/searchJSON?country
+REACT_APP_COUNTRY_CODE=https://restcountries.com/v3.1/name
+
+REACT_APP_WEATHER_API_KEY=<YOUR-WEATHER-API-KEY>
+REACT_APP_USER_NAME=<YOUR-GEONAMES-USERNAME>
+```
+
+Replace `<YOUR-WEATHER-API-KEY>` and `<YOUR-GEONAMES-USERNAME>` with your actual API credentials.
+
+### 4. Run the Application Locally
 
 ```sh
 npm start
@@ -87,3 +102,4 @@ This project is open-source and free to use.
 ## Author
 
 Developed by [Muhammad Sohaib Ali](https://github.com/muhammadsohaibali).
+
