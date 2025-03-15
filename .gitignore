@@ -1,7 +1,8 @@
+.env
+
 asset-manifest.json
 Update Command.txt
 index.html
-.env
 
 node_modules/
 static/
