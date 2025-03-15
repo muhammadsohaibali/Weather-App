@@ -1,0 +1,83 @@
+.container-hourlysection {
+  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  scrollbar-color: #555 #272727;
+  scrollbar-width: thin;
+  height: calc(100% - 30px);
+}
+
+.container-hourlysection::-webkit-scrollbar {
+  height: 6px;
+}
+
+.container-hourlysection::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
+
+.container-hourlysection::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+.container-hourlysection::-webkit-scrollbar-track {
+  background: #272727;
+  border-radius: 10px;
+}
+
+.container-items {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  height: calc(100% - 20px);
+}
+
+.items-hourly {
+  height: 100%;
+  border-radius: 10px;
+  padding: 12px 20px;
+  background-color: #272727;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  max-width: 100px;
+}
+
+.mid-img {
+  width: 50px;
+}
+
+.feel-span {
+  font-size: 12px;
+}
+
+.div-parts-top {
+  display: flex;
+  font-size: 18px;
+  margin: 0 auto auto auto;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+  text-align: center;
+}
+
+.div-parts-mid {
+  display: flex;
+  margin-top: 5px;
+  margin-bottom: auto;
+}
+
+.div-parts-mid-bot {
+  display: flex;
+  margin: auto auto 0 auto;
+  text-align: center;
+  font-size: 12px;
+}
+
+.div-parts-bot {
+  display: flex;
+  margin: 2px auto 0 auto;
+  text-align: center;
+  font-size: 18px;
+  flex-direction: column;
+  border-top: 1px solid rgba(128, 128, 128, 0.5);
+}

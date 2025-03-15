@@ -1,0 +1,146 @@
+.today-container {
+  width: calc(100% - 30px);
+  padding: 20px;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.today-text {
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.today-details {
+  display: flex;
+  flex-grow: 1;
+  height: 112px;
+  flex-direction: row;
+}
+
+.details-desktop {
+  display: block;
+}
+
+.details-mobile {
+  display: none;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+  .today-rows {
+    background-color: #272727;
+    width: calc(100% - 70%);
+    margin-right: 10px;
+    padding: 16px 20px;
+    color: white;
+    border-radius: 12px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .details p {
+    margin: 0;
+  }
+
+  .label {
+    font-size: 14px;
+    color: #bdbdbd;
+  }
+
+  .time {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .col-div {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .data-div {
+    font-size: 14px;
+    text-align: right;
+    width: 100%;
+    margin: 0;
+    /* margin-bottom: 5px; */
+  }
+
+  .data-div .number-data {
+    font-size: 20px;
+  }
+
+  .data-div .fe-stat {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .details-desktop {
+    display: none;
+  }
+
+  .details-mobile {
+    display: block;
+  }
+
+  .today-rows-mobile {
+    background-color: #272727;
+    width: calc(100% - 50%);
+    margin-right: 10px;
+    padding: 16px 20px;
+    margin-bottom: 10px;
+    color: white;
+    border-radius: 12px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    padding-left: 10px;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
+  }
+
+  .label {
+    font-size: 18px;
+    color: #bdbdbd;
+    text-align: left;
+  }
+
+  .time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    margin-top: -5px;
+    font-weight: 600;
+  }
+}

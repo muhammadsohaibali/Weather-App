@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/muhammadsohaibali/Weather-App/static/css/main.4eab379d.css",
+    "main.js": "/muhammadsohaibali/Weather-App/static/js/main.633212f3.js",
+    "index.html": "/muhammadsohaibali/Weather-App/index.html",
+    "main.4eab379d.css.map": "/muhammadsohaibali/Weather-App/static/css/main.4eab379d.css.map",
+    "main.633212f3.js.map": "/muhammadsohaibali/Weather-App/static/js/main.633212f3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4eab379d.css",
+    "static/js/main.633212f3.js"
+  ]
+}

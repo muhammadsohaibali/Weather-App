@@ -1,0 +1,126 @@
+body {
+  background-color: #c7c7c7;
+  user-select: none;
+}
+
+.greet {
+  margin-left: 35px;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  position: relative;
+  transition: transform 0.1s ease-out, filter 0.2s ease-in-out;
+}
+
+.greet:hover {
+  filter: brightness(1.1);
+  cursor: pointer;
+  transform: translateX(3px);
+}
+
+.container {
+  max-width: 1200px;
+  min-width: 1100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 90%;
+  max-height: 705px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: rgba(15, 15, 15, 255);
+  box-shadow: 0px 0px 10px 1px rgba(95, 85, 85, 0.2);
+}
+
+.sub-container {
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+  gap: 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.vertical-divs {
+  height: 95%;
+  gap: 15px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mini-divs-a {
+  width: 100%;
+  height: 45%;
+}
+
+.mini-divs-b {
+  width: 100%;
+  height: 55%;
+}
+
+.min-div {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  transition: 0.05s;
+}
+
+.min-div:hover {
+  transform: scale(1.004);
+  filter: brightness(0.98);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    background-color: #c7c7c7;
+    user-select: none;
+  }
+
+  .greet {
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .container {
+    max-width: 1200px;
+    min-width: 300px;
+    width: 90%;
+    margin: 5px auto;
+    max-height: max-content;
+    height: auto;
+    top: auto;
+    left: auto;
+    transform: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .sub-container {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .vertical-divs {
+    width: 100% !important;
+    gap: 10px;
+  }
+
+  .mini-divs-a,
+  .mini-divs-b {
+    width: 100%;
+    height: auto;
+  }
+
+  .min-div {
+    border-radius: 8px;
+    /* padding: 10px; */
+  }
+}
