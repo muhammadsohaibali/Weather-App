@@ -6,11 +6,11 @@ import { useState, useCallback } from "react";
 export default function NavBar({ onSearch, weatherData, srchColor }) {
     const [inputValue, setInputValue] = useState("");
 
-    const debouncedSearch = useCallback(delaySearch(onSearch, 1000), [onSearch]);
+    const delayedSearch = useCallback(delaySearch(onSearch, 400), [onSearch]);
 
     const handleInputChange = (e) => {
         setInputValue(e.target.value);
-        debouncedSearch(e.target.value);
+        delayedSearch(e.target.value);
     };
 
     const hour = weatherData?.location?.localtime ? parseInt(weatherData?.location?.localtime.split(" ")[1].split(":")[0]) : 0;

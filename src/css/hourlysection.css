@@ -37,7 +37,7 @@
 .container-items::after {
   content: "";
   display: block;
-  min-width: 10px;
+  min-width: 5px;
 }
 
 .items-hourly {
