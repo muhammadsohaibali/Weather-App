@@ -19,7 +19,7 @@ A simple and interactive Weather App built using React.js that provides real-tim
 ## Technologies Used
 
 - **Frontend:** React.js, JavaScript, CSS
-- **API:** Weather API, Geonames
+- **API:** Weather API & Geonames
 - **Deployment:** GitHub Pages
 
 ## Installation
@@ -66,31 +66,22 @@ git push origin main
 
 ```
 Weather-App/
-│-- build/         # Production build (ignored in .gitignore)
-│-- public/        # Static assets
-│-- src/           # Source code
-│   │-- components/ # React components
-│   │-- assets/     # Images and icons
-│   │-- App.js      # Main application file
-│   │-- index.js    # Entry point
-│-- .gitignore     # Ignored files
-│-- package.json   # Dependencies and scripts
-│-- README.md      # Project documentation
+│-- build/           # Production build (ignored in .gitignore)
+│-- public/          # Static assets
+│-- src/             # Source code
+│   │-- components/  # React components
+|   │-- css/         # Images and icons
+│   │-- utils/       # JavaScript Functions
+│   │-- App.js       # Main application file
+│   │-- index.js     # Entry point
+│-- .gitignore       # Ignored files
+│-- package.json     # Dependencies and scripts
+│-- README.md        # Project documentation
 ```
-
-## Future Improvements
-
-- Add notifications for extreme weather conditions
-- Support for multiple languages
-- UI enhancements for better user experience
 
 ## License
 
 This project is open-source and free to use.
-
-## Contributing
-
-Contributions are welcome. Feel free to fork the repository, open issues, or submit pull requests.
 
 ## Author
 
