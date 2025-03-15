@@ -9,12 +9,12 @@ A simple and interactive Weather App built using React.js that provides real-tim
 
 ## Features
 
-- Real-time location-based weather updates
 - Search for any city worldwide
-- Detailed weather information including temperature, humidity, and wind speed
+- Real-time location-based weather updates
+- Weather information for multiple popular cities
 - Responsive user interface for both desktop and mobile
 - Dynamic backgrounds that change based on weather conditions
-- Weather information for multiple popular cities
+- Detailed weather information including temperature, humidity, and wind speed
 
 ## Technologies Used
 
