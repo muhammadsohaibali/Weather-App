@@ -17,6 +17,7 @@ function App() {
       ({ coords: { latitude, longitude } }) => fetchWeather(latitude, longitude).then(x => setAutoData(x)),
       () => console.error("Geolocation error")
     );
+    console.log("HI")
   }, []);
 
   const handleSearch = (query) => {

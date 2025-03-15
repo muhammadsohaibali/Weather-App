@@ -25,7 +25,7 @@ const Othercities = (props) => {
                         <div className="data-div"><span className="fe-stat">{getHumidityCategory(props?.data?.current?.humidity && props?.data?.current?.humidity)}</span></div>
                     </div>
                     <div className="today-rows" style={{ width: '50%', gap: '20px' }}>
-                        <img src="imgs/sunrise.png" alt="Sunrise" className="icon" />
+                        <img src={`${process.env.PUBLIC_URL}/imgs/sunrise.png`} alt="Sunrise" className="icon" />
                         <div className="details">
                             <p className="label">Sunrise</p>
                             <p className="time">{props?.data?.forecast?.forecastday[0]?.astro.sunrise ? `${props?.data?.forecast?.forecastday[0]?.astro.sunrise}` : '-'}</p>
@@ -44,7 +44,7 @@ const Othercities = (props) => {
                         <div className="data-div"><span className="fe-stat">{getPressureCategory(props?.data?.current?.pressure_mb && props?.data?.current?.pressure_mb)}</span></div>
                     </div>
                     <div className="today-rows" style={{ width: '50%', gap: '20px' }}>
-                        <img src="imgs/sunset.png" alt="sunset" className="icon" />
+                        <img src={`${process.env.PUBLIC_URL}/imgs/sunset.png`} alt="sunset" className="icon" />
                         <div className="details">
                             <p className="label">Sunset</p>
                             <p className="time">{props?.data?.forecast?.forecastday[0]?.astro.sunset ? `${props?.data?.forecast?.forecastday[0]?.astro.sunset}` : '-'}</p>

@@ -31,7 +31,7 @@ const Othercities = ({ country, city }) => {
     return (
         <div className="container-othercities">
             <div>
-                <span className="other-cities">Other Cities</span>
+                <span className="other-cities">More From {city_1?.location?.country ? city_1?.location?.country : '-'}</span>
             </div>
             <div className="other-divs">
                 <div className="other-city-details">
