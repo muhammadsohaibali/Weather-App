@@ -31,6 +31,13 @@
   flex-direction: row;
   gap: 10px;
   height: calc(100% - 20px);
+  position: relative;
+}
+
+.container-items::after {
+  content: "";
+  display: block;
+  min-width: 10px;
 }
 
 .items-hourly {
