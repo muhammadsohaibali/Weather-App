@@ -1,7 +1,9 @@
-.env
-Update Command.txt
-node_modules/
-build/
 asset-manifest.json
-imgs/
+Update Command.txt
+index.html
+.env
+
+node_modules/
 static/
+build/
+imgs/

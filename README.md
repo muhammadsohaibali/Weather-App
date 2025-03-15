@@ -66,14 +66,15 @@ git push origin main
 
 ```
 Weather-App/
-│-- build/           # Production build (ignored in .gitignore)
 │-- public/          # Static assets
 │-- src/             # Source code
 │   │-- components/  # React components
 |   │-- css/         # Images and icons
 │   │-- utils/       # JavaScript Functions
+|   |-- app.css      # Main app styles
 │   │-- App.js       # Main application file
 │   │-- index.js     # Entry point
+|-- .env             # API Keys & Creds
 │-- .gitignore       # Ignored files
 │-- package.json     # Dependencies and scripts
 │-- README.md        # Project documentation
