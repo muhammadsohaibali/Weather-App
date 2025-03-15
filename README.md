@@ -1,89 +1,97 @@
-Weather App 🌤️
+# Weather App
 
 A simple and interactive Weather App built using React.js that provides real-time weather updates based on user location and manual searches.
 
-🚀 Features
+## Live Demo
 
-🌍 Real-time Location-Based Weather: Automatically fetches weather data based on your current location.
+- **Live Page:** [Weather App](https://muhammadsohaibali.github.io/Weather-App/)
+- **Source Code:** [GitHub Repository](https://github.com/muhammadsohaibali/Weather-App)
 
-🔍 Search for Any City: Manually search for weather updates of any city worldwide.
+## Features
 
-📊 Detailed Weather Info: Provides temperature, humidity, wind speed, and other weather conditions.
+- Real-time location-based weather updates
+- Search for any city worldwide
+- Detailed weather information including temperature, humidity, and wind speed
+- Responsive user interface for both desktop and mobile
+- Dynamic backgrounds that change based on weather conditions
+- Weather information for multiple popular cities
 
-🎨 Responsive UI: Optimized for both mobile and desktop screens.
+## Technologies Used
 
-☀️ Dynamic Backgrounds: Changes background based on weather conditions.
+- **Frontend:** React.js, JavaScript, CSS
+- **API:** Weather API, Geonames
+- **Deployment:** GitHub Pages
 
-🏙️ Other Cities Section: Displays weather info for popular cities.
+## Installation
 
-🛠️ Tech Stack
+### 1. Clone the Repository
 
-Frontend: React.js, JavaScript, CSS
-
-API: OpenWeather API (or any other weather data provider)
-
-Deployment: GitHub Pages
-
-📦 Installation
-
-1️⃣ Clone the Repository
-
+```sh
 git clone https://github.com/muhammadsohaibali/Weather-App.git
 cd Weather-App
+```
 
-2️⃣ Install Dependencies
+### 2. Install Dependencies
 
+```sh
 npm install
+```
 
-3️⃣ Run the App Locally
+### 3. Run the Application Locally
 
+```sh
 npm start
+```
 
-The app will run on http://localhost:3000/ by default.
+The application will run on `http://localhost:3000/` by default.
 
-🌍 Deployment
+## Deployment
 
 The project is deployed on GitHub Pages.
 
-Update Deployment:
+### Updating the Live Version
 
-Whenever you make changes and want to update the live website, use:
+To update the live website after making changes, use the following commands:
 
+```sh
 git pull origin main --rebase
 npm run build
 npm run deploy
 git add .
 git commit -m "Updated Weather App"
 git push origin main
+```
 
-📂 Project Structure
+## Project Structure
 
+```
 Weather-App/
-│-- build/ # Production build (ignored in .gitignore)
-│-- public/ # Static assets
-│-- src/ # Source code
-│ │-- components/ # React components
-│ │-- assets/ # Images and icons
-│ │-- App.js # Main application file
-│ │-- index.js # Entry point
-│-- .gitignore # Ignored files
-│-- package.json # Dependencies and scripts
-│-- README.md # Project documentation
+│-- build/         # Production build (ignored in .gitignore)
+│-- public/        # Static assets
+│-- src/           # Source code
+│   │-- components/ # React components
+│   │-- assets/     # Images and icons
+│   │-- App.js      # Main application file
+│   │-- index.js    # Entry point
+│-- .gitignore     # Ignored files
+│-- package.json   # Dependencies and scripts
+│-- README.md      # Project documentation
+```
 
-🎯 To-Do / Future Improvements
+## Future Improvements
 
-🔔 Add notifications for extreme weather conditions.
+- Add notifications for extreme weather conditions
+- Support for multiple languages
+- UI enhancements for better user experience
 
-🌎 Support for multiple languages.
-
-🎨 UI enhancements for better user experience.
-
-📜 License
+## License
 
 This project is open-source and free to use.
 
-🙌 Contributing
+## Contributing
 
-Feel free to fork, open issues, or submit PRs to improve this project!
+Contributions are welcome. Feel free to fork the repository, open issues, or submit pull requests.
 
-Developed by Muhammad Sohaib Ali 🚀
+## Author
+
+Developed by [Muhammad Sohaib Ali](https://github.com/muhammadsohaibali).
