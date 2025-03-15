@@ -1,8 +1,8 @@
-function delaySearch(func, delay) {
-    let timer;
+function dls(f, d) {
+    let t;
     return (...args) => {
-        clearTimeout(timer);
-        timer = setTimeout(() => func(...args), delay);
+        clearTimeout(t);
+        t = setTimeout(() => f(...args), d);
     };
 }
-export default delaySearch;
+export default dls;

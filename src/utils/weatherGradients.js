@@ -1,4 +1,4 @@
-const weatherBackgrounds = {
+const wb = {
     1000: { day: "linear-gradient(to right, #ff9800, #ff5722)", night: "linear-gradient(to right, #141e30, #243b55)" },
     1003: { day: "linear-gradient(to right, #84b5ff, #e6d9d9)", night: "linear-gradient(to right, #232526, #414345)" },
     1006: { day: "linear-gradient(to right, #d3d3d3, #a3a3a3)", night: "linear-gradient(to right, #2c3e50, #4ca1af)" },
@@ -17,4 +17,4 @@ const weatherBackgrounds = {
     default: { day: "linear-gradient(to right, #667db6, #0082c8)", night: "linear-gradient(to right, #141E30, #243B55)" },
 };
 
-export default weatherBackgrounds;
+export default wb;

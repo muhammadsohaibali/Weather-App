@@ -1,3 +1,4 @@
+import { FaLocationArrow } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import '../css/detailedsection.css'
 import { getWindCategory, getHumidityCategory, getPressureCategory, getUVCategory } from '../utils/weatherUtils'
@@ -16,7 +17,9 @@ const Othercities = (props) => {
                 <div className="today-details">
                     <div className="today-rows col-div">
                         <div className="data-div"><i className='bx bx-wind'></i> Wind Speed</div>
-                        <div className="data-div"><span className="number-data">{props?.data?.current?.wind_kph ? `${props?.data?.current?.wind_kph}` : '-'}</span><span className="fe-stat" > km/h</span></div>
+                        <div className="data-div">
+                            <span className="number-data" style={{ paddingRight: '5px' }}><FaLocationArrow className="wind-arrow" style={{ transform: `rotate(${(props?.data?.current?.wind_degree ?? 0) - 45}deg)`, marginTop: '5px' }} /></span>
+                            <span className="number-data">{props?.data?.current?.wind_kph ? `${props?.data?.current?.wind_kph}` : '-'}</span><span className="fe-stat" > km/h</span></div>
                         <div className="data-div"><span className="fe-stat">{getWindCategory(props?.data?.current?.wind_kph && props?.data?.current?.wind_kph)}</span></div>
                     </div>
                     <div className="today-rows col-div">

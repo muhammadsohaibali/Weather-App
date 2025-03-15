@@ -15,13 +15,7 @@ const Weathercard = (props) => {
     };
 
     return (
-        <div className={
-            props.searchQuery &&
-                props.searchQuery.current.is_day === 1
-                ? "weather-card mini-divs-a min-div daytime"
-                : "weather-card mini-divs-a min-div nighttime"}
-            style={bgStyle}>
-
+        <div className="weather-card mini-divs-a min-div" style={bgStyle}>
             <div className="top-div">
                 <div className="loc-div">
                     <i className='bx bxs-map'></i>
@@ -90,23 +84,6 @@ const Weathercard = (props) => {
                 </div>
                 <div className="img-col-div">
                     <img className='weather-icon' src={props.searchQuery && props.searchQuery.current && `${props.searchQuery.current.condition.icon}`} alt="" />
-                    <div className="compass-container">
-                        <span className="wind-degree">Deg<br />{props?.searchQuery?.current?.wind_degree}°</span>
-                        <div className="compass">
-                            <span className="direction north">N</span>
-                            <span className="direction east">E</span>
-                            <span className="direction south">S</span>
-                            <span className="direction west">W</span>
-                            <div className="wind-arrow-container">
-                                <FaLocationArrow
-                                    className="wind-arrow"
-                                    style={{
-                                        transform: `rotate(${(props?.searchQuery?.current?.wind_degree ?? 0) - 45}deg)`
-                                    }}
-                                />
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

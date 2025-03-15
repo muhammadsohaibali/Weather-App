@@ -1,12 +1,12 @@
 import "../css/navbar.css";
-import delaySearch from "../utils/delaySrch";
+import dls from "../utils/delaySrch";
 
 import { useState, useCallback } from "react";
 
 export default function NavBar({ onSearch, weatherData, srchColor }) {
     const [inputValue, setInputValue] = useState("");
 
-    const delayedSearch = useCallback(delaySearch(onSearch, 400), [onSearch]);
+    const delayedSearch = useCallback(dls(onSearch, 400), [onSearch]);
 
     const handleInputChange = (e) => {
         setInputValue(e.target.value);

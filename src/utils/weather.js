@@ -1,17 +1,17 @@
 const fetchWeather = async (a, b) => {
     try {
         if (!b) {
-            const response = await fetch(
+            const r = await fetch(
                 `${process.env.REACT_APP_URL}?key=${process.env.REACT_APP_API_KEY}&q=${a}&aqi=no`
             );
-            const data = await response.json();
-            if (response.ok) return data;
+            const d = await r.json();
+            if (r.ok) return d;
         } else if (a && b) {
-            const response = await fetch(
+            const r = await fetch(
                 `${process.env.REACT_APP_URL}?key=${process.env.REACT_APP_API_KEY}&q=${a},${b}&aqi=no`
             );
-            const data = await response.json();
-            if (response.ok) return data;
+            const d = await r.json();
+            if (r.ok) return d;
         }
     } catch (err) {
         console.error("Error fetching weather data:", err);

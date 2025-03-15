@@ -28,6 +28,13 @@
   display: none;
 }
 
+.wind-arrow {
+  font-size: 16px;
+  color: #ff4d4d;
+  transition: transform 0.3s ease-in-out;
+}
+
+
 @media screen and (min-width: 1000px) {
   .today-rows {
     background-color: #272727;
