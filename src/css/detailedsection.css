@@ -28,8 +28,6 @@
   display: none;
 }
 
-
-
 @media screen and (min-width: 1000px) {
   .today-rows {
     background-color: #272727;
@@ -142,5 +140,29 @@
     font-size: 20px;
     margin-top: -5px;
     font-weight: 600;
+  }
+
+  .col-div {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .data-div {
+    font-size: 14px;
+    text-align: right;
+    width: 100%;
+    margin: 0;
+    /* margin-bottom: 5px; */
+  }
+
+  .data-div .number-data {
+    font-size: 20px;
+  }
+
+  .data-div .fe-stat {
+    font-size: 10px;
   }
 }
