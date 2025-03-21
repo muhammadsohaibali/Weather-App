@@ -5,7 +5,7 @@ A simple and interactive Weather App built using React.js that provides real-tim
 ## Live Demo
 
 - **Live Page:** [Weather App](https://muhammadsohaibali.github.io/Weather-App/)
-- **Source Code:** [GitHub Repository](https://github.com/muhammadsohaibali/Weather-App)
+- **Source Code:** [GitHub Repository](https://github.com/muhammadsohaibali/Weather-App/tree/main)
 
 ## Features
 
